@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Kanit', sans-serif;
+/* font-family: 'Montserrat', sans-serif; */
+  font-size: 32px;
+  font-style: bold;
+margin-top: 80px;
+  text-align: center;
+  color: black;
+}
+.back {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #e0e0e0;
+  position: absolute;
+  -webkit-transform: transparent;
+}
+
+.form-box {
+  width: 400px;
+  height: 550px;
+  position: relative;
+  border: solid 5px black;
+  margin: 5% auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  overflow: hidden;
+}
+
+.btn-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0, 0, 20px, 9px, rgb(72, 65, 217);
+  border-radius: 30px;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, rgb(65, 184, 226), rgb(20, 101, 131));
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.submit-btn {
+  font-size: 15px;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  width: 85%;
+ margin-bottom: -280px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: #1f288b;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+}
+.logout-btn {
+  font-size: 15px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 30%;
+  margin-bottom: -305px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: rgb(232, 37, 37);
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+}
+
+#login {
+  left: 50px;
+}
+#registerAdmin {
+  left: 450px;
+}

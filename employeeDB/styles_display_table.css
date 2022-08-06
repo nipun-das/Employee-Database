@@ -5,27 +5,42 @@
   outline: 0;
 }
 
+.banner {
+  height: 70px;
+  background-color: #1a2170;
+  text-align: center;
+}
+
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-  font-style:bold;
-  margin-top: 40px;
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  margin-bottom: 550px;
   text-align: center;
   color: black;
 }
-body {
-  background:#e0e0e0;
-  display: block;
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+}
+
+.back {
+  height: 90.5%;
   width: 100%;
-  overflow: auto;
-  height: 50px;
+  display: flex;
+  background-color: #3d1616;
+  position: absolute;
+  -webkit-transform: transparent;
 }
 table {
- margin-left: auto;
- margin-right: auto;
- margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: #1a2170;
   width: 60%;
   border-spacing: 0;
+  box-shadow: 0 2px 12px rgba(32, 32, 32, 0.3);
   border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
@@ -33,10 +48,11 @@ td,
 th {
   max-width: 100%;
   white-space: nowrap;
+  background-color: #e1f5fe;
   padding: 15px 20px;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   text-align: center;
-  word-wrap:inherit;
+  word-wrap: inherit;
 }
 th {
   white-space: nowrap;

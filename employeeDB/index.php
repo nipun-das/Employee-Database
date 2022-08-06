@@ -6,25 +6,22 @@ if (isset($_POST['signUpButton'])) {
   $email = $_POST['ademail'];
   $password = $_POST['adpassword'];
 
-  $insert = "INSERT INTO administrator( admusername, admemail, admpassword) VALUES ('$username','$email','$password')";
+  $insert = "INSERT INTO adminTable( admusername, admemail, admpassword) VALUES ('$username','$email','$password')";
   $qry = mysqli_query($conn, $insert);
-  
 }
 if (isset($_POST['loginButton'])) {
   $username  = $_POST['username'];
   $password  = $_POST['password'];
 
-  $sql = " SELECT * FROM administrator WHERE admusername = '$username' ";
+  $sql = " SELECT * FROM adminTable WHERE admusername = '$username' ";
   $qry = mysqli_query($conn, $sql);
 
   while ($row = mysqli_fetch_array($qry)) {
     $dbusername = $row['admusername'];
     $dbpassword = $row['admpassword'];
     if ($username == $dbusername && $password == $dbpassword) {
-     
       // sending username to welcome page      
-      $_SESSION['username'] = $username; 
-      //$username  = $_POST['username'];
+      $_SESSION['username'] = $username;
       header("location: welcome_page.php");
       exit();
     }
@@ -36,25 +33,35 @@ if (isset($_POST['loginButton'])) {
 <html>
 
 <head>
-  <title>Login Registration form</title>
+  <title>Employee Database</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
 </head>
 
 <!-- for preventing back button to redirect to homepage -->
 <script type="text/javascript">
-    function preventBack() {
-        window.history.forward()
-    };
-    setTimeout("preventBack()", 0);
-    window.onunload = function() {
-        null;
-    }
+  function preventBack() {
+    window.history.forward()
+  };
+  setTimeout("preventBack()", 0);
+  window.onunload = function() {
+    null;
+  }
 </script>
 
 <body>
+  <div class="banner">
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <h1>EMPLOYEE DATABASE</h1>
+  </div>
   <div class="back">
     <div class="form-box">
       <div class="btn-box">
@@ -81,10 +88,17 @@ if (isset($_POST['loginButton'])) {
       </form>
     </div>
   </div>
+  <div class="bottom-banner">
+   <p> <a href="about_us.html" target="_blank" >ABOUT US</a></p>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+  </div>
 </body>
-
 </html>
 
+<!-- For the toggle animation of login and register buttons -->
 <script>
   var x = document.getElementById("login");
   var y = document.getElementById("registerAdmin");
@@ -94,15 +108,13 @@ if (isset($_POST['loginButton'])) {
     x.style.left = "-400px";
     y.style.left = "50px";
     z.style.left = "110px";
-
   }
 
   function login() {
     x.style.left = "50px";
     y.style.left = "420px";
     z.style.left = "0px";
-
   }
 </script>
-</body>
+
 </html>

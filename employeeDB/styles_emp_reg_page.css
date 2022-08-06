@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  height: 70px;
+  background-color: #1a2170;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: 25px;
+  margin-bottom: 550px;
+  text-align: center;
+  color: black;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+}
+
+.back {
+  height: 90.5%;
+  width: 100%;
+  display: flex;
+  background-color: #e0e0e0;
+  position: absolute;
+  -webkit-transform: transparent;
+}
+
+.form-box {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% auto;
+  color: #fff;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #e1f5fe;
+  border-spacing: 0;
+  box-shadow: 0 2px 12px rgba(32, 32, 32, 0.3);
+  border-radius: 20px 20px 20px 20px;
+}
+.input-group {
+  margin-top: 50px;
+  position: absolute;
+  width: 350px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 14px 0;
+  border-right: 0;
+  border-left: 0;
+  margin-top: 10px;
+  border-top: 0;
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+  outline: transparent;
+  background: transparent;
+}
+.btn-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0, 0, 20px, 9px, rgb(72, 65, 217);
+  border-radius: 30px;
+}
+
+.submit-btn {
+  font-size: 15px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  width: 50%;
+  margin-bottom: -320px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: #1f288b;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+}
+.active,
+.submit-btn:hover {
+  background-color: #00ab66;
+  color: white;
+}
+#login {
+  left: 50px;
+}
+#registerAdmin {
+  left: 450px;
+}

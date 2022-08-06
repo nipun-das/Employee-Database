@@ -2,11 +2,19 @@
 <link rel="stylesheet" href="styles_display_table.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-<title>Employee Table</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<title>Employee Details</title>
 
 <body>
-    <h2>EMPLOYEE DETAILS</h2>
+    <div class="banner">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <h1>EMPLOYEE DATABASE</h1>
+    </div>
     <table>
         <tr>
             <th>ID</th>
@@ -20,14 +28,13 @@
             <th>Phone Number</th>
         </tr>
         <?php
-        //session_start();
+
         include("server.php");
         error_reporting(0);
-        $show = "SELECT * FROM employee";
+        $show = "SELECT * FROM employeeTable";
         $qry = mysqli_query($conn, $show);
         $noofrows = mysqli_num_rows($qry);
-        //echo "$noofrows";
-        //echo $result['empid']." ".$result['empname']." ".$result['email'];
+
         if ($noofrows != 0) {
             while ($result = mysqli_fetch_assoc($qry)) {
                 echo "
@@ -50,4 +57,5 @@
         ?>
     </table>
 </body>
+
 </html>

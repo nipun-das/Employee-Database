@@ -3,17 +3,36 @@
   padding: 0;
 }
 
+.banner {
+  height: 70px;
+  background-color: #1a2170;
+}
+
 h2 {
-  font-family: 'Kanit', sans-serif;
-/* font-family: 'Montserrat', sans-serif; */
+  font-family: "Kanit", sans-serif;
   font-size: 32px;
-  font-style: bold;
-margin-top: 80px;
   text-align: center;
+  top:50px;
+  display: inline;
   color: black;
 }
+h3 {
+  font-family: "Kanit", sans-serif;
+  font-size: 32px;
+  display: inline;
+  color: red;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-style: bold;
+  text-align: center;
+  color: white;
+}
+
 .back {
-  height: 100%;
+  text-align: center;
+  height: 90.5%;
   width: 100%;
   display: flex;
   background-color: #e0e0e0;
@@ -23,13 +42,17 @@ margin-top: 80px;
 
 .form-box {
   width: 400px;
-  height: 550px;
+  height: 500px;
   position: relative;
   border: solid 5px black;
-  margin: 5% auto;
-  background-color: rgb(255, 255, 255);
+  margin: 4.5% auto;
+  background-color: #e1f5fe;
   color: rgb(255, 255, 255);
   padding: 5px;
+  border: #1a2170;
+  border-spacing: 0;
+  box-shadow: 0 2px 12px rgba(32, 32, 32, 0.3);
+  border-radius: 20px 20px 20px 20px;
   overflow: hidden;
 }
 
@@ -41,23 +64,11 @@ margin-top: 80px;
   border-radius: 30px;
 }
 
-#btn {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 110px;
-  height: 100%;
-  background: linear-gradient(to right, rgb(65, 184, 226), rgb(20, 101, 131));
-  border-radius: 30px;
-  transition: 0.5s;
-}
-
 .submit-btn {
   font-size: 15px;
   color: white;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   width: 85%;
- margin-bottom: -280px;
   padding: 10px 30px;
   cursor: pointer;
   display: block;
@@ -67,20 +78,31 @@ margin-top: 80px;
   outline: none;
   border-radius: 10px;
 }
+.active,
+.submit-btn:hover {
+  background-color: #00ab66;
+  color: white;
+}
 .logout-btn {
   font-size: 15px;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Kanit", sans-serif;
   width: 30%;
   margin-bottom: -305px;
   padding: 10px 30px;
   cursor: pointer;
   display: block;
   margin: auto;
-  background: rgb(232, 37, 37);
+  background: #000000;
   border: 0;
   outline: none;
   border-radius: 10px;
+}
+
+.active,
+.logout-btn:hover {
+  background-color: #f00e0e;
+  color: white;
 }
 
 #login {

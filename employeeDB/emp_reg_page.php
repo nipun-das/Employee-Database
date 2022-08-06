@@ -11,9 +11,10 @@ if (isset($_POST['registerButton'])) {
   $salary = $_POST['salary'];
   $phonenum = $_POST['phonenum'];
 
-  $insert = "INSERT INTO employee( empname, email, sex,age,address,department,salary,phonenum) VALUES ('$name','$email','$sex','$age','$address','$department','$salary','$phonenum')";
+  $insert = "INSERT INTO employeeTable( empname, email, sex,age,address,department,salary,phonenum) 
+  VALUES ('$name','$email','$sex','$age','$address','$department','$salary','$phonenum')";
   $qry = mysqli_query($conn, $insert);
-  echo "successsfully registered";
+  // registration done
 }
 ?>
 <!DOCTYPE html>
@@ -26,13 +27,20 @@ if (isset($_POST['registerButton'])) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="banner">
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <h1>EMPLOYEE DATABASE</h1>
+  </div>
   <div class="back">
     <div class="form-box">
-    <h2>Enter the Employee details</h2>
+      <h2>Enter the Employee details</h2>
       <form id="register" class="input-group" method="post">
         <input type="text" class="input-field" name="name" placeholder="Name" required />
         <input type="email" class="input-field" name="email" placeholder="Email" required />
@@ -50,31 +58,6 @@ if (isset($_POST['registerButton'])) {
       </form>
     </div>
   </div>
-
-</body>
-
-</html>
-
-
-<script>
-  var x = document.getElementById("login");
-  var y = document.getElementById("register");
-  var z = document.getElementById("btn");
-
-  function register() {
-    x.style.left = "-400px";
-    y.style.left = "50px";
-    z.style.left = "110px";
-
-  }
-
-  function login() {
-    x.style.left = "50px";
-    y.style.left = "420px";
-    z.style.left = "0px";
-
-  }
-</script>
 </body>
 
 </html>

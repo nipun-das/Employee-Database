@@ -7,9 +7,9 @@
 
 ## Screenshots
 <p float="left">
-  <img src="employeeDB/ss/aapic1.jpg" width="220">&nbsp;&nbsp;&nbsp;
-  <img src = "employeeDB/ss/aapic2.jpg"  width = "220" >&nbsp;&nbsp;&nbsp;
-  <img src = "employeeDB/ss/aapic3.jpg"  width = "220" >&nbsp;&nbsp;&nbsp;
-  <img src = "employeeDB/ss/aapic4.jpg"  width = "220" >&nbsp;&nbsp;&nbsp;
-  <img src = "employeeDB/ss/aapic5.jpg"  width = "220" >&nbsp;&nbsp;&nbsp;
+  <img src="employeeDB/ss/aapic1.jpg" width="450">&nbsp;&nbsp;&nbsp;
+  <img src = "employeeDB/ss/aapic2.jpg"  width = "450" >&nbsp;&nbsp;&nbsp;
+  <img src = "employeeDB/ss/aapic3.jpg"  width = "450" >&nbsp;&nbsp;&nbsp;
+  <img src = "employeeDB/ss/aapic4.jpg"  width = "450" >&nbsp;&nbsp;&nbsp;
+  <img src = "employeeDB/ss/aapic5.jpg"  width = "450" >&nbsp;&nbsp;&nbsp;
 </p>
